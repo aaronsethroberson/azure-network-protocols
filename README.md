@@ -29,7 +29,7 @@ With the ICMP filter active in Wireshark, use the `ping` command to test connect
 <br />
 
 <p>
-<img src="https://github.com/aaronsethroberson/azure-network-protocols/blob/main/1.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/aaronsethroberson/azure-network-protocols/blob/main/images/1.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 In the next phase of the lab, we will use the `ping` command with the `-t` option and the private IP address of the Linux Virtual Machine. This will initiate a continuous ping that will run indefinitely until it is manually stopped or a response is received. While the Windows 10 VM is actively pinging the Linux VM, we will switch to the Linux VM and block all ICMP traffic using its firewall. This will involve creating a new Network Security Group for the Linux VM, configured to deny ICMP traffic. Consequently, the Linux VM will stop sending echo replies.
@@ -37,8 +37,8 @@ In the next phase of the lab, we will use the `ping` command with the `-t` optio
 <br />
 
 <p>
-<img src="https://github.com/aaronsethroberson/azure-network-protocols/blob/main/2.jpg" height="80%" width="80%" alt="Ping Commmand"/>
-<img src="https://github.com/aaronsethroberson/azure-network-protocols/blob/main/3.jpg" height="80%" width="80%" alt="icmp deny"/>
+<img src="https://github.com/aaronsethroberson/azure-network-protocols/blob/main/images/2.jpg" height="80%" width="80%" alt="Ping Commmand"/>
+<img src="https://github.com/aaronsethroberson/azure-network-protocols/blob/main/images/3.jpg" height="80%" width="80%" alt="icmp deny"/>
 
 </p>
 <p>
@@ -46,7 +46,7 @@ As demonstrated below, disabling incoming ICMP traffic results in the message "R
 </p>
 <br />
 <p>
-<img src="https://github.com/aaronsethroberson/azure-network-protocols/blob/main/4.jpg" height="80%" width="80%" alt="control c"/>
+<img src="https://github.com/aaronsethroberson/azure-network-protocols/blob/main/images/4.jpg" height="80%" width="80%" alt="control c"/>
 </p>
 
 <p>
@@ -54,7 +54,7 @@ Next, we will configure Wireshark on the Windows 10 VM to filter for SSH (Secure
 </p>
 <br />
 <p>
-<img src="https://github.com/aaronsethroberson/azure-network-protocols/blob/main/5.jpg" height="80%" width="80%" alt="ssh"/>
+<img src="https://github.com/aaronsethroberson/azure-network-protocols/blob/main/images/5.jpg" height="80%" width="80%" alt="ssh"/>
 </p>
 
 <p>
@@ -69,7 +69,7 @@ While monitoring SSH traffic, we will run several Linux commands and examine the
 </p>
 <br />
 <p>
-<img src="https://github.com/aaronsethroberson/azure-network-protocols/blob/main/6.jpg" height="80%" width="80%" alt="commands"/>
+<img src="https://github.com/aaronsethroberson/azure-network-protocols/blob/main/images/6.jpg" height="80%" width="80%" alt="commands"/>
 </p>
 
 <p>
@@ -77,7 +77,7 @@ In Wireshark, we’ll apply a filter for DHCP (Dynamic Host Configuration Protoc
 </p>
 <br />
 <p>
-<img src="https://github.com/aaronsethroberson/azure-network-protocols/blob/main/7.jpg" height="80%" width="80%" alt="ssh"/>
+<img src="https://github.com/aaronsethroberson/azure-network-protocols/blob/main/images/7.jpg" height="80%" width="80%" alt="ssh"/>
 </p>
 
 <p>
@@ -85,7 +85,7 @@ The Domain Name System (DNS) translates human-readable domain names into IP addr
 </p>
 <br />
 <p>
-<img src="https://github.com/aaronsethroberson/azure-network-protocols/blob/main/8.jpg" height="80%" width="80%" alt="dns"/>
+<img src="https://github.com/aaronsethroberson/azure-network-protocols/blob/main/images/8.jpg" height="80%" width="80%" alt="dns"/>
 </p>
 
 <p>
@@ -93,5 +93,5 @@ Finally, we’ll filter for RDP (Remote Desktop Protocol) traffic by using the f
 </p>
 <br />
 <p>
-<img src="https://github.com/aaronsethroberson/azure-network-protocols/blob/main/9.jpg" height="80%" width="80%" alt="ssh"/>
+<img src="https://github.com/aaronsethroberson/azure-network-protocols/blob/main/images/9.jpg" height="80%" width="80%" alt="ssh"/>
 </p>
